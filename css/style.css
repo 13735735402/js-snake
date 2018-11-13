@@ -1,0 +1,118 @@
+/*
+ *by:峰哥
+ *date:2018-11-11
+ */
+* {
+	padding: 0;
+	margin: 0;
+}
+body {
+	background: #999;
+}
+#page {
+	position: relative;
+	width: 490px;
+	height: 700px;
+	margin: 10px auto;
+	border: 4px solid lightgrey;
+	outline: 0;
+}
+.container {
+	position: relative;
+	width: 490px;
+	height: 620px;
+	background: #fff;
+	margin: 0 auto;
+}
+.randomDIV {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	background:url(../img/2.png);
+	border-radius: 50%;
+}
+.body {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	background:url(../img/2.png);
+	border-radius: 50%;
+}
+.body img {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+.score {
+	color: #333;
+	margin: 15px 0 0 40px;
+	font-size: 30px;
+}
+strong {
+	color: green;
+}
+.begin {
+	position: relative;
+	left: 350px;
+	top: -42px;
+	width: 100px;
+	height: 50px;
+	outline: 0;
+	font-size: 20px;
+	color: white;
+	border-radius: 20px;
+	background: rgba(0,0,255,1);
+}
+.begin:hover{ 
+	cursor: pointer;
+}
+
+.up,.down,.left,.right {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	background: rgba(0,0,255,1);
+	text-align: center;
+	border-radius: 50%;
+	cursor: pointer;
+	color: white;
+	font-weight: bold;
+	font-size: 30px;
+}
+.up:hover,.down:hover,
+.left:hover,.right:hover {
+	background: red;
+}
+.up {
+	bottom: 63px;
+	right: 70px;
+}
+.right {
+	bottom: 33px;
+	right: 30px;
+}
+.down {
+	bottom: 2px;
+	right: 70px;
+}
+.left {
+	bottom: 33px;
+	right: 110px;
+}
+.choose {
+	background: red;
+}
+.gameover {
+	position: absolute;
+	top: 250px;
+	left: 30px;
+	color: red;
+	font-weight: bold;
+	font-size: 70px;
+	display: none;
+	-webkit-animation: gameover .5s;
+}
+@-webkit-keyframes gameover{
+	from{-webkit-transform: scale(0);}
+	to{}
+}
